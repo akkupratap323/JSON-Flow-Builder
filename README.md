@@ -1,73 +1,41 @@
-# Welcome to your Lovable project
+# Angular JSON Forms with Standalone Components
 
-## Project info
+A dynamic form generator using JSON Schemas with Angular 15+ standalone components, JSONForms.io, and Tailwind CSS.
 
-**URL**: https://lovable.dev/projects/dc7d41d7-958f-4e16-b9b7-78817f34ccdc
+## Features
 
-## How can I edit this code?
+- 🚀 Standalone components architecture
+- 📝 Dynamic forms from JSON schemas
+- 🎨 Custom renderers with Tailwind CSS
+- ✅ Real-time validation
+- 📱 Responsive design
+- ✨ Angular Material integration
 
-There are several ways of editing your application.
+## Prerequisites
 
-**Use Lovable**
+- Node.js 16.x or later
+- npm 8.x or later
+- Angular CLI 15+
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/dc7d41d7-958f-4e16-b9b7-78817f34ccdc) and start prompting.
+## Installation
 
-Changes made via Lovable will be committed automatically to this repo.
+1. Clone the repository:
+```bash
+git clone https://github.com/your-username/angular-json-forms.git
+cd angular-json-forms
 
-**Use your preferred IDE**
+npm install
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+npx tailwindcss init
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+ng serve
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/dc7d41d7-958f-4e16-b9b7-78817f34ccdc) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+src/
+├── app/
+│   ├── components/          # Custom components
+│   ├── models/              # Form schemas and interfaces
+│   ├── app.config.ts        # Application configuration
+│   ├── app.component.ts     # Root component
+│   └── main.ts              # Application bootstrap
+├── styles.scss              # Global styles
+└── index.html               # Main HTML template
